@@ -1,17 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Brandon Kochnari | Portfolio Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brandon Kochnari | Portfolio Website</title>
 
-    <!--Tailwind CSS CDN-->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-gray-50 text-gray-900">
-    <h1 class="text-4xl font-bold text-center mt-10">Hi, I’m Brandon 👋</h1>
-    <p class="text-center mt-2">Welcome to my portfolio!</p>
 
-    <div class="bg-blue-500 text-white p-4 rounded-lg shadow-md">Hello!</div>
+<body>
+  <!-- NAV BAR --> 
+  <nav>
+    <div class="left">
+      <a href="/">Brandon Kochnari</a>
+    </div>
+    <div class="right">
+      <a href="https://github.com/BrandonKochnari" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/brandon-kochnari" target="_blank" rel="noopener noreferrer">
+        <i class="fa-brands fa-linkedin"></i>
+        <span>LinkedIn</span>
+      </a>
+
+      <a href="mailto:brandon.kochnari@gmail.com">
+        <i class="fa-solid fa-envelope"></i>
+        <span>Email</span>
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: Hero -->
+    <section class="hero-section">
+      <div class="text">
+        <h2>Hi, I'm Brandon 👋</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, sit fuga! Deleniti iste, est, obcaecati enim totam officiis assumenda, temporibus eius nesciunt qui aperiam culpa cupiditate eveniet rem! Aperiam delectus dicta quo vero laboriosam nisi ut itaque omnis reprehenderit aliquam.</p>
+        <div class="links">
+          <a href="#skills">
+            <i class="fa-solid fa-user-gear"></i>
+            <span>Skills</span>
+          </a>
+          <a href="#projects">
+            <i class="fa-solid fa-laptop-code"></i>
+            <span>Projects</span>
+          </a>
+          <a href="#Contact">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contact</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="headshot">
+        <img src="images/headshot.png" alt="Brandon Kochnari Headshot">
+      </div>
+    </section>
+
+    <!-- SECTION 2: Skills -->
+    <section id="skills"></section>
+
+    <!-- SECTION 3: Projects -->
+    <section id="projects"></section>
+
+    <!-- SECTION 4: Contact -->
+    <section id="contact"></section>
+  </main>
 </body>
 </html>
