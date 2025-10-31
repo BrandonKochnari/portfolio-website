@@ -377,28 +377,54 @@ nav .right a span {
         width: 300px;
     }
 
-    .hero-section .text h2 {
+    .hero-section .intro h2 {
         display: flex;
         align-items: center;
-        font-size: 30px;
+        font-size: 36px;
     }
 
     .hero-section .intro .links {
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
         margin-left: 10px;
+        font-size: 20px;
+        gap: 10px;
+    }
+    .hero-section .intro .links a {
+        width: 325px;
     }
 
     /* SECTION 2: SKILLS */
     .skills-section {
         padding: 0 20px;
     }
+
+    .skills-section .skill-cell {
+        width: 260px;
+    }
+
+    .skills-section .cells img {
+        width: 80px;
+        height: auto;
+    }
+
     .skills-section .cells span {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     /* SECTION 3: PROJECTS */
     .contact-section {
         padding: 0 20px;
+    }
+
+    .projects-section .project-card h3 {
+        font-size: 28px;
+    }
+
+    .projects-section .projects-grid .buttons a {
+        font-size: 18px;
     }
 
     /* SECTION 4: CONTACT */
