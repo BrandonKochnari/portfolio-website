@@ -33,6 +33,17 @@ nav {
     align-items: center;
     padding: 0 50px;
     height: 80px;
+    border-bottom: 1px solid #30343b;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    transition: transform 0.4s ease;
+}
+
+nav.hide {
+  transform: translateY(-100%);
 }
 
 nav .left a {
@@ -67,32 +78,39 @@ nav .right a span {
     gap: 40px;
 }
 
-.hero-section .text {
+.hero-section .intro {
     flex: 5;
 }
 
-.hero-section .text h2 {
+.hero-section .intro h2 {
     font-size: 45px;
 }
 
-.hero-section .text .links {
+.hero-section .intro .links {
     margin-top: 25px;
 }
 
-.hero-section .text .links a {
+.hero-section .intro .links a {
     display: inline-block;
     padding: 5px 10px;
     border: 2px solid var(--link-color);
+    background-color: var(--link-color);
+    color: var(--background-color);
     border-radius: 5px;
     margin-right: 10px;
     margin-bottom: 10px;
     transition: 0.3s;
 }
 
-.hero-section .text .links a:hover {
-    color: var(--background-color);
-    border: 2px solid var(--link-color);
-    background-color: var(--link-color);
+.hero-section .intro .links a:hover {
+    background-color: var(--background-color);
+    border: 2px solid var(--text-color);
+    color: var(--text-color);
+}
+
+.hero-section .intro .text p {
+    margin-left: 0;
+    margin-bottom: 10px;
 }
 
 .hero-section .headshot {
@@ -102,8 +120,8 @@ nav .right a span {
 }
 
 .hero-section .headshot img {
-  width: 350px; 
-  border-radius: 50%;
+    width: 350px; 
+    border-radius: 50%;
 }
 
 /* SECTION 2: SKILLS */
@@ -124,31 +142,52 @@ nav .right a span {
 
 .skills-section .cells {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    flex-wrap: wrap; 
+    gap: 25px;
+    margin-top: 30px;
 }
 
-.skills-section .cells .cell {
+.skill-cell {
+    width: 230px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-
-    width: 200px;
-    padding: 10px 20px;
-    margin: 10px;
-    border: 1.5px solid #d3d3d3;
-    border-radius: 5px;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
 }
 
-.skills-section .cells .cell span {
+.skills-section .skill-cell:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section .skill-cell img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.skills-section .skill-cell span {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    white-space: nowrap;
+}
+
+.skills-section .cells span {
     font-size: 20px;
+    color: #1a1c20;
 }
 
 .skills-section .cells img {
     width: 75px;
     object-fit: contain;
-    
 }
 
 /* SECTION 3: PROJECTS */
@@ -163,57 +202,57 @@ nav .right a span {
 }
 
 .projects-section .projects-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
-.project-card {
-  background-color: #fff;
-  border: 1.5px solid #d3d3d3;
-  border-radius: 10px;
-  width: 350px;
-  padding: 20px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.projects-section .project-card {
+    background-color: #fff;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 10px;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
 }
 
 .project-card img {
-  width: 100%;
-  height: 200px;
-  object-fit: contain;
-  border-radius: 6px;
-  margin-bottom: 15px;
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 6px;
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
-  color: var(--text-color);
-  margin-bottom: 10px;
+    color: var(--text-color);
+    margin-bottom: 10px;
 }
 
 .project-card p {
-  color: #555;
-  font-size: 15px;
-  margin-bottom: 15px;
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 15px;
 }
 
 .project-card .buttons a {
-  display: inline-block;
-  color: #fff;
-  background-color: var(--link-color);
-  padding: 8px 16px;
-  border: 2px solid var(--link-color);
-  font-size: 14px;
-  transition: 0.3s;
-  border-radius: 50px;
+    display: inline-block;
+    color: #fff;
+    background-color: var(--link-color);
+    padding: 8px 16px;
+    border: 2px solid var(--link-color);
+    font-size: 14px;
+    transition: 0.3s;
+    border-radius: 5px;
 }
 
 .project-card .buttons a:hover {
@@ -238,8 +277,12 @@ nav .right a span {
 }
 
 .contact-section .group .text {
-    flex: 3;
     margin-top: 20px;
+    flex: 3;
+}
+
+.contact-section .texts {
+    flex: 3;
 }
 
 .contact-section .group form {
@@ -268,6 +311,7 @@ nav .right a span {
     cursor: pointer;
     transition: 0.3s;
     border-radius: 5px;
+    margin-bottom: 10px;
 }
 
 .contact-section .group form button:hover {
@@ -275,6 +319,27 @@ nav .right a span {
     border: 2px solid var(--text-color);
     color: var(--text-color);
 }
+
+.contact-section .form-popup {
+    position: fixed;
+    bottom: -60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--link-color);
+    color: white;
+    padding: 12px 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: bottom 0.75s ease-in-out;
+    z-index: 9999;
+}
+
+.contact-section .form-popup.show {
+    bottom: 25px; /* slides up into view */
+}
+
 
 /* SMALLER SCREEN DEVICES */
 @media (max-width: 725px) {
@@ -315,7 +380,7 @@ nav .right a span {
     .skills-section {
         padding: 0 20px;
     }
-    .skills-section .cells .cell span {
+    .skills-section .cells span {
         font-size: 16px;
     }
 
