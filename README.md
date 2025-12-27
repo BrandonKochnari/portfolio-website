@@ -33,4 +33,3 @@ The site serves as both a professional introduction and an interactive resume, d
 - **JavaScript (ES6)** → interactivity and dynamic effects  
 - **Font Awesome** → icons for navbar and skill cards  
 - **Formspree API** → contact form handling  
-- **Google Fonts (Poppins)** → modern and consistent typography  
