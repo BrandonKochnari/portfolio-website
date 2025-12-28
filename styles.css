@@ -123,7 +123,151 @@ nav .right a span {
     border-radius: 50%;
 }
 
-/* SECTION 2: SKILLS */
+/* SECTION 2: HIGHLIGHTS */
+.highlights-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.highlights-section h2 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 35px;
+}
+
+.highlights-section .highlights-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.highlights-section .highlight-card {
+  background: #fff;
+  border: 1.5px solid #d3d3d3;
+  border-radius: 14px;
+  width: 390px;
+  padding: 22px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.highlights-section .highlight-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0,0,0,0.10);
+}
+
+.highlights-section .highlight-card.featured {
+  border-color: rgba(74,118,238,0.55);
+  box-shadow: 0 10px 22px rgba(74,118,238,0.12);
+}
+
+.highlights-section .highlight-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.highlights-section .icon-bubble {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: rgba(74,118,238,0.12);
+  color: var(--link-color);
+  flex: 0 0 auto;
+}
+
+.highlights-section h3 {
+  margin: 0;
+  font-size: 20px;
+  color: var(--text-color);
+}
+
+.highlights-section .mini {
+  margin-top: 4px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.highlights-section .pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.highlights-section .pill {
+  font-size: 13px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  color: #444;
+}
+
+.highlights-section .stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.highlights-section .stack-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 14px 16px;
+  border: 1px solid #e6e6e6;
+  border-radius: 14px;
+  background: #fcfcfc;
+}
+
+.highlights-section .tag {
+  width: fit-content;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--link-color);
+  background: rgba(74,118,238,0.10);
+  padding: 6px 10px;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.highlights-section .desc {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.highlights-section .checklist {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+}
+
+.highlights-section .checklist li {
+  position: relative;
+  padding-left: 24px;
+  margin: 10px 0;
+  color: #555;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.highlights-section .checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--link-color);
+  font-weight: 700;
+}
+
+/* SECTION 3: SKILLS */
 .skills-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -184,7 +328,7 @@ nav .right a span {
     object-fit: contain;
 }
 
-/* SECTION 3: PROJECTS */
+/* SECTION 4: PROJECTS */
 .projects-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -255,7 +399,7 @@ nav .right a span {
     color: var(--text-color);
 }
 
-/* SECTION 4: CONTACT */
+/* SECTION 5: CONTACT */
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -392,7 +536,16 @@ nav .right a span {
         width: 300px;
     }
 
-    /* SECTION 2: SKILLS */
+    /* SECTION 2: HIGHLIGHTS */
+    .highlights-section {
+        padding: 0 20px;
+    }
+    .highlights-section .highlight-card {
+        width: 100%;
+        max-width: 460px;
+    }
+
+    /* SECTION 3: SKILLS */
     .skills-section {
         padding: 0 20px;
     }
@@ -410,7 +563,7 @@ nav .right a span {
         font-size: 20px;
     }
 
-    /* SECTION 3: PROJECTS */
+    /* SECTION 4: PROJECTS */
     .contact-section {
         padding: 0 20px;
     }
@@ -423,7 +576,7 @@ nav .right a span {
         font-size: 16px;
     }
 
-    /* SECTION 4: CONTACT */
+    /* SECTION 5: CONTACT */
     .contact-section .group {
         flex-direction: column;
     }

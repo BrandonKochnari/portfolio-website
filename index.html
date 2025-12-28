@@ -57,6 +57,10 @@
               <p>You can find more about my background, skills, and experience on my page below.</p>
           </div>
           <div class="links">
+            <a href="#highlights">
+              <i class="fa-solid fa-bolt"></i>
+              <span>Highlights</span>
+            </a>
             <a href="#skills">
               <i class="fa-solid fa-user-gear"></i>
               <span>Skills</span>
@@ -77,7 +81,79 @@
         </div>
       </section>
 
-      <!-- SECTION 2: Skills -->
+      <!-- SECTION 2: Highlights -->
+      <section id="highlights" class="highlights-section">
+        <h2>Highlights</h2>
+
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-header">
+              <div class="icon-bubble"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+              <div>
+                <h3>Strengths</h3>
+                <p class="mini">How I build and improve code</p>
+              </div>
+            </div>
+
+            <div class="pills">
+              <span class="pill">OOP design</span>
+              <span class="pill">Clean Architecture</span>
+              <span class="pill">Data Structures</span>
+              <span class="pill">Debugging & Refactoring</span>
+              <span class="pill">SOLID Design Principles</span>
+              <span class="pill">Automata & Computational Logic</span>
+              <span class="pill">Recursion</span>
+              <span class="pill">Algorithm Design & Complexity</span>
+            </div>
+          </div>
+
+          <div class="highlight-card featured">
+            <div class="highlight-header">
+              <div class="icon-bubble"><i class="fa-solid fa-graduation-cap"></i></div>
+              <div>
+                <h3>Education & Awards</h3>
+                <p class="mini">Academic background and distinctions</p>
+              </div>
+            </div>
+
+            <div class="stack">
+              <div class="stack-row">
+                <span class="tag">University of Toronto</span>
+                <span class="desc">Honours B.Sc. • Computer Science Specialist Expected Apr 2028</span>
+              </div>
+
+              <div class="stack-row">
+                <span class="tag">Scholarship</span>
+                <span class="desc">Ted Mossman Scholarship • exceptional academic promise</span>
+              </div>
+
+              <div class="stack-row">
+                <span class="tag">Additional Awards</span>
+                <span class="desc">Ontario Scholar Award, Spirit of Math Honours Award</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-header">
+              <div class="icon-bubble"><i class="fa-solid fa-briefcase"></i></div>
+              <div>
+                <h3>Looking For</h3>
+                <p class="mini">Internship direction</p>
+              </div>
+            </div>
+
+            <ul class="checklist">
+              <li>Software engineering internships</li>
+              <li>Roles focused on building, testing, and improving real systems</li>
+              <li>Positions that prioritize learning industry-relevant engineering skills</li>
+              <li>Teams that value mentorship, ownership, and steady growth</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: Skills -->
       <section id="skills" class="skills-section">
         <h2>Skills</h2>
         <div class="text">
@@ -86,7 +162,7 @@
         </div>
 
         <div class="cells">
-          <a href="https://github.com/BrandonKochnari/MathOdyssey.git" target="_blank" class="skill-cell">
+          <a href="https://github.com/BrandonKochnari/finance-tracker.git" target="_blank" class="skill-cell">
             <img src="images/java.png" class="java" alt="java logo">
             <span>Java</span>
           </a>
@@ -119,9 +195,9 @@
 
       </section>
 
-    <!-- SECTION 3: Projects -->
+    <!-- SECTION 4: Projects -->
     <section id="projects" class="projects-section">
-      <h2>Projects</h2>
+      <h2>Recent Projects</h2>
       <div class="projects-grid">
 
         <div class="project-card">
@@ -143,11 +219,11 @@
         </div>
 
         <div class="project-card">
-          <img src="images/mathodyssey.png" alt="math odyssey project">
-          <h3>Math Odyssey</h3>
-          <p>A gamified math adventure that turns problem-solving into an interactive journey through puzzles, challenges, and logic-based gameplay.</p>
+          <img src="images/financetracker.png" alt="finance tracker project">
+          <h3>Finance Tracker</h3>
+          <p>A dynamic finance tracking system for managing budgets, transactions, and analytics through graphical visuals designed using Clean Architecture.</p>
           <div class="buttons">
-            <a href="https://github.com/BrandonKochnari/MathOdyssey.git" target="_blank">Repository</a>
+            <a href="https://github.com/BrandonKochnari/finance-tracker.git" target="_blank">Repository</a>
           </div>
         </div>
 
@@ -155,7 +231,7 @@
     </section>
 
 
-      <!-- SECTION 4: Contact -->
+      <!-- SECTION 5: Contact -->
       <section id="contact" class="contact-section">
         <h2>Contact</h2>
 
@@ -186,7 +262,7 @@
         </form>
 
         <div id="form-popup" class="form-popup">
-          <p>✅ Message sent! Thank you, I’ll get back to you soon.</p>
+          <p>Message sent! Thank you, I’ll get back to you soon.</p>
         </div>
 
         </div>
@@ -214,10 +290,10 @@
             setTimeout(() => popup.classList.remove("show"), 4000);
             form.reset();
           } else {
-            alert("❌ Something went wrong. Please try again.");
+            alert("Something went wrong. Please try again.");
           }
         } catch (error) {
-          alert("❌ Network error. Please try again later.");
+          alert("Network error. Please try again later.");
         }
       });
     </script>
