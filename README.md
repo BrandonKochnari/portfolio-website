@@ -1,4 +1,4 @@
-# [Portfolio Website](https://brandonkochnari.github.io/website-portfolio/) 🌐💼
+# [Portfolio Website](https://brandonkochnari.me/) 🌐💼
 
 **Brandon Kochnari’s Portfolio** is a clean, responsive website built with **HTML**, **CSS**, and **JavaScript** in **Visual Studio Code** to showcase my skills, projects, and background in **Computer Science**.  
 The site serves as both a professional introduction and an interactive resume, designed to reflect clarity, simplicity, and modern design principles.  
@@ -33,4 +33,3 @@ The site serves as both a professional introduction and an interactive resume, d
 - **JavaScript (ES6)** → interactivity and dynamic effects  
 - **Font Awesome** → icons for navbar and skill cards  
 - **Formspree API** → contact form handling  
-- **Google Fonts (Poppins)** → modern and consistent typography  
