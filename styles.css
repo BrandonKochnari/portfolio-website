@@ -153,14 +153,11 @@ nav .right a span {
 }
 
 .highlights-section .highlight-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 18px rgba(0,0,0,0.10);
-}
-
-.highlights-section .highlight-card.featured {
+  transform: translateY(-5px);
   border-color: rgba(74,118,238,0.55);
   box-shadow: 0 10px 22px rgba(74,118,238,0.12);
 }
+
 
 .highlights-section .highlight-header {
   display: flex;
@@ -307,8 +304,10 @@ nav .right a span {
 }
 
 .skills-section .skill-cell:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transform: translateY(-5px);
+  box-shadow:
+    0 10px 22px rgba(74,118,238,0.12),
+    inset 0 0 0 1.5px rgba(74,118,238,0.7);
 }
 
 .skills-section .skill-cell img {
@@ -360,7 +359,8 @@ nav .right a span {
 
 .projects-section .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-color: rgba(74,118,238,0.55);
+    box-shadow: 0 10px 22px rgba(74,118,238,0.12);
 }
 
 .projects-section .project-card img {
