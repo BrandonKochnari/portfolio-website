@@ -127,6 +127,7 @@ nav .right a span {
 .highlights-section {
   padding: 0 50px;
   margin-bottom: 100px;
+  scroll-margin-top: 15vh;
 }
 
 .highlights-section h2 {
@@ -146,7 +147,7 @@ nav .right a span {
   background: #fff;
   border: 1.5px solid #d3d3d3;
   border-radius: 14px;
-  width: 390px;
+  width: 350px;
   padding: 22px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -268,6 +269,7 @@ nav .right a span {
 .skills-section {
     padding: 0 50px;
     margin-bottom: 100px;
+    scroll-margin-top: 30vh;
 }
 
 .skills-section h2 {
@@ -331,6 +333,7 @@ nav .right a span {
 .projects-section {
     padding: 0 50px;
     margin-bottom: 100px;
+    scroll-margin-top: 15vh;
 }
 
 .projects-section h2 {
