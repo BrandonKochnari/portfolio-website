@@ -147,7 +147,7 @@ nav .right a span {
   background: #fff;
   border: 1.5px solid #d3d3d3;
   border-radius: 14px;
-  width: 350px;
+  width: 370px;
   padding: 22px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -266,7 +266,7 @@ nav .right a span {
 
 /* SECTION 3: SKILLS */
 .skills-section {
-    padding: 0 50px;
+    padding: 0 100px;
     margin-bottom: 100px;
     scroll-margin-top: 30vh;
 }
@@ -352,7 +352,7 @@ nav .right a span {
     background-color: #fff;
     border: 1.5px solid #d3d3d3;
     border-radius: 10px;
-    width: 350px;
+    width: 370px;
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
