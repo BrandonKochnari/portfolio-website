@@ -121,6 +121,8 @@ nav .right a span {
 .hero-section .headshot img {
     width: 350px; 
     border-radius: 50%;
+    border: 1.5px solid #1a1c20;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.18);
 }
 
 /* SECTION 2: HIGHLIGHTS */
