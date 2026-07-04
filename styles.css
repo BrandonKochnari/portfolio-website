@@ -279,7 +279,7 @@ nav .right a span {
 }
 
 .skills-section .text {
-    max-width: 1200px;
+    max-width: 1500px;
     margin-inline: auto;
 }
 
@@ -291,10 +291,9 @@ nav .right a span {
 
 .skills-section .cells {
     display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(5, 245px);
     justify-content: center;
     gap: 20px;
-    max-width: 1500px;
     margin: 30px auto 0;
 }
 
@@ -305,13 +304,17 @@ nav .right a span {
     justify-content: center;
     min-width: 0;
     gap: 8px;
-    padding: 10px;
+    padding: 12px;
     background-color: #fff;
     border: 1px solid #d3d3d3;
     border-radius: 10px;
     color: var(--text-color);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.3s ease;
+}
+
+.skills-section .skill-cell:nth-last-child(3) {
+    grid-column: 2;
 }
 
 .skills-section .skill-cell:hover {
@@ -322,15 +325,15 @@ nav .right a span {
 }
 
 .skills-section .skill-cell img {
-    width: 40px;
-    height: 40px;
-    flex: 0 0 40px;
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
     object-fit: contain;
 }
 
 .skills-section .skill-cell span {
     min-width: 0;
-    font-size: 23px;
+    font-size: 24px;
     line-height: 1.2;
     font-weight: 500;
     color: var(--text-color);
@@ -339,7 +342,145 @@ nav .right a span {
     text-overflow: ellipsis;
 }
 
-/* SECTION 4: PROJECTS */
+/* SECTION 4: PROFESSIONAL EXPERIENCE */
+.experience-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+    scroll-margin-top: 15vh;
+}
+
+.experience-section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.experience-section .experience-card {
+    display: block;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    border: 1.5px solid #d3d3d3;
+    border-radius: 14px;
+    padding: 26px 28px;
+    color: inherit;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.experience-section .experience-card:hover,
+.experience-section .experience-card:focus-visible {
+    transform: translateY(-5px);
+    border-color: rgba(74,118,238,0.55);
+    box-shadow: 0 10px 22px rgba(74,118,238,0.12);
+}
+
+.experience-section .experience-card:focus-visible {
+    outline: 3px solid rgba(74,118,238,0.35);
+    outline-offset: 4px;
+}
+
+.experience-section .experience-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 24px;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.experience-section .experience-company {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin: 0 0 6px;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.experience-section .experience-company span {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--link-color);
+}
+
+.experience-section h3 {
+    margin: 0;
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.experience-section .experience-location,
+.experience-section .experience-date {
+    color: #666;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.experience-section .experience-location {
+    margin: 6px 0 0;
+}
+
+.experience-section .experience-date {
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    white-space: nowrap;
+}
+
+.experience-section .experience-summary {
+    margin: 18px 0 0;
+    color: #444;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.experience-section .experience-list {
+    margin: 16px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+.experience-section .experience-list li {
+    position: relative;
+    padding-left: 24px;
+    margin: 10px 0;
+    color: #555;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.experience-section .experience-list li::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 10px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--link-color);
+}
+
+.experience-section .experience-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.experience-section .experience-pills span {
+    font-size: 13px;
+    padding: 7px 10px;
+    border-radius: 999px;
+    border: 1px solid #ddd;
+    background: #fafafa;
+    color: #444;
+}
+
+/* SECTION 5: PROJECTS */
 .projects-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -368,14 +509,21 @@ nav .right a span {
     width: 370px;
     padding: 20px;
     text-align: center;
+    color: inherit;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.projects-section .project-card:hover {
+.projects-section .project-card:hover,
+.projects-section .project-card:focus-visible {
     transform: translateY(-5px);
     border-color: rgba(74,118,238,0.55);
     box-shadow: 0 10px 22px rgba(74,118,238,0.12);
+}
+
+.projects-section .project-card:focus-visible {
+    outline: 3px solid rgba(74,118,238,0.35);
+    outline-offset: 4px;
 }
 
 .projects-section .project-card img {
@@ -397,28 +545,7 @@ nav .right a span {
     margin-bottom: 15px;
 }
 
-.projects-section .project-card .buttons {
-    margin-top: auto;
-}
-
-.projects-section .project-card .buttons a {
-    display: inline-block;
-    color: var(--background-color);
-    background-color: var(--link-color);
-    padding: 8px 16px;
-    border: 2px solid var(--link-color);
-    font-size: 14px;
-    transition: 0.3s;
-    border-radius: 5px;
-}
-
-.projects-section .project-card .buttons a:hover {
-    background-color: #fff;
-    border: 2px solid var(--text-color);
-    color: var(--text-color);
-}
-
-/* SECTION 5: CONTACT */
+/* SECTION 6: CONTACT */
 .contact-section {
     padding: 0 50px;
     margin-bottom: 100px;
@@ -503,6 +630,10 @@ nav .right a span {
 @media (max-width: 1200px) {
     .skills-section .cells {
         grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .skills-section .skill-cell:nth-last-child(3) {
+        grid-column: auto;
     }
 
     .skills-section .text p {
@@ -595,11 +726,29 @@ nav .right a span {
         font-size: 18px;
     }
 
-    /* SECTION 4: PROJECTS */
-    .contact-section {
+    /* SECTION 4: PROFESSIONAL EXPERIENCE */
+    .experience-section {
         padding: 0 20px;
     }
 
+    .experience-section .experience-card {
+        padding: 22px;
+    }
+
+    .experience-section .experience-header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .experience-section .experience-company {
+        font-size: 20px;
+    }
+
+    .experience-section .experience-date {
+        width: fit-content;
+    }
+
+    /* SECTION 5: PROJECTS */
     .projects-section .project-card h3 {
         font-size: 28px;
     }
@@ -608,7 +757,7 @@ nav .right a span {
         font-size: 16px;
     }
 
-    /* SECTION 5: CONTACT */
+    /* SECTION 6: CONTACT */
     .contact-section .group {
         flex-direction: column;
     }

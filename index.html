@@ -34,7 +34,7 @@
           <span>LinkedIn</span>
         </a>
 
-        <a href="assets/Resume.pdf">
+        <a href="assets/Brandon_Kochnari_SoftwareEngineer_2026.pdf">
           <i class="fa-solid fa-file"></i>
           <span>Resume</span>
         </a>
@@ -64,6 +64,10 @@
             <a href="#skills">
               <i class="fa-solid fa-user-gear"></i>
               <span>Skills</span>
+            </a>
+            <a href="#experience">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Experience</span>
             </a>
             <a href="#projects">
               <i class="fa-solid fa-laptop-code"></i>
@@ -99,10 +103,10 @@
               <span class="pill">Full-Stack Development</span>
               <span class="pill">Systems Programming</span>
               <span class="pill">Network Programming</span>
-              <span class="pill">REST &amp; WebSocket APIs</span>
+              <span class="pill">REST APIs</span>
+              <span class="pill">WebSocket APIs</span>
               <span class="pill">Database Design</span>
               <span class="pill">Clean Architecture</span>
-              <span class="pill">Testing &amp; CI/CD</span>
               <span class="pill">Data Structures &amp; Algorithms</span>
             </div>
           </div>
@@ -187,6 +191,21 @@
             <span>TypeScript</span>
           </a>
 
+          <a href="https://github.com/BrandonKochnari/website-portfolio" target="_blank" rel="noopener noreferrer" class="skill-cell">
+            <img src="assets/html.png" class="skill-icon" alt="HTML logo">
+            <span>HTML</span>
+          </a>
+
+          <a href="https://github.com/BrandonKochnari/website-portfolio" target="_blank" rel="noopener noreferrer" class="skill-cell">
+            <img src="assets/css.png" class="skill-icon" alt="CSS logo">
+            <span>CSS</span>
+          </a>
+
+          <a href="https://github.com/Muhammad-B-Sayed/Channel-Wire" target="_blank" rel="noopener noreferrer" class="skill-cell">
+            <img src="assets/nodejs.png" class="skill-icon" alt="Node.js logo">
+            <span>Node.js</span>
+          </a>
+
           <a href="https://github.com/BrandonKochnari/url-shortlink.git" target="_blank" rel="noopener noreferrer" class="skill-cell">
             <img src="assets/sql.png" class="skill-icon" alt="SQL database logo">
             <span>SQL</span>
@@ -207,61 +226,78 @@
             <span>PostgreSQL</span>
           </a>
 
-          <a href="https://github.com/Muhammad-B-Sayed/Channel-Wire" target="_blank" rel="noopener noreferrer" class="skill-cell">
+          <a href="https://github.com/Muhammad-B-Sayed/Channel-Wire" target="_blank" rel="noopener noreferrer" class="skill-cell docker-cell">
             <img src="assets/docker.png" class="skill-icon" alt="Docker logo">
             <span>Docker</span>
-          </a>
-
-          <a href="https://github.com/BrandonKochnari/url-shortlink.git" target="_blank" rel="noopener noreferrer" class="skill-cell">
-            <img src="assets/restapi.png" class="skill-icon" alt="REST API icon">
-            <span>REST APIs</span>
-          </a>
-
-          <a href="https://github.com/Muhammad-B-Sayed/Channel-Wire" target="_blank" rel="noopener noreferrer" class="skill-cell">
-            <img src="assets/cicd.png" class="skill-icon" alt="Continuous integration and delivery icon">
-            <span>CI/CD</span>
           </a>
         </div>
 
       </section>
 
-    <!-- SECTION 4: Projects -->
+      <!-- SECTION 4: Professional Experience -->
+      <section id="experience" class="experience-section">
+        <h2>Professional Experience</h2>
+
+        <a href="https://adrima.xyz" target="_blank" rel="noopener noreferrer" class="experience-card">
+          <div class="experience-header">
+            <div>
+              <p class="experience-company">
+                Adrima
+              </p>
+              <h3>Software Engineer</h3>
+              <p class="experience-location">Toronto, ON · Hybrid</p>
+            </div>
+            <span class="experience-date">May 2026 - Present</span>
+          </div>
+
+          <p class="experience-summary">
+            Building production-facing product features for an AI-powered finance platform focused on stock analysis, portfolio monitoring, risk evaluation, and investment decision support.
+          </p>
+
+          <ul class="experience-list">
+            <li>Developing responsive frontend features and user workflows for complex financial data and model-driven portfolio insights.</li>
+            <li>Creating scalable UI components that turn dense analytics into clear, usable product experiences.</li>
+            <li>Expanding into backend and machine learning development to improve financial question-answering and decision support.</li>
+          </ul>
+
+          <div class="experience-pills">
+            <span>Frontend Development</span>
+            <span>AI Finance</span>
+            <span>Product UI</span>
+            <span>Backend Development</span>
+            <span>Machine Learning</span>
+          </div>
+        </a>
+      </section>
+
+    <!-- SECTION 5: Projects -->
     <section id="projects" class="projects-section">
       <h2>Recent Projects</h2>
       <div class="projects-grid">
 
-        <div class="project-card">
+        <a href="https://urlshortlink.xyz/" target="_blank" rel="noopener noreferrer" class="project-card">
           <img src="assets/urlshortlink.png" alt="URL Shortlink dashboard">
           <h3>URL Shortlink</h3>
           <p>A full-stack URL shortening platform built with FastAPI, React, TypeScript, and PostgreSQL, featuring JWT authentication, custom short codes, guest links, analytics, rate limiting, and automated tests.</p>
-          <div class="buttons">
-            <a href="https://urlshortlink.xyz/" target="_blank" rel="noopener noreferrer">Website</a>
-          </div>
-        </div>
+        </a>
 
-        <div class="project-card">
+        <a href="https://channel-wire.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-card">
           <img src="assets/channelwire.png" alt="ChannelWire messaging platform">
           <h3>ChannelWire</h3>
           <p>A production-style real-time messaging platform built with a non-blocking C TCP server, FastAPI WebSocket gateway, PostgreSQL persistence layer, and React TypeScript dashboard.</p>
-          <div class="buttons">
-            <a href="https://channel-wire.vercel.app/" target="_blank" rel="noopener noreferrer">Website</a>
-          </div>
-        </div>
+        </a>
 
-        <div class="project-card">
+        <a href="https://github.com/BrandonKochnari/finance-tracker.git" target="_blank" rel="noopener noreferrer" class="project-card">
           <img src="assets/financetracker.png" alt="Finance Tracker application">
           <h3>Finance Tracker</h3>
           <p>A Java personal finance application built with Clean Architecture and SOLID principles, featuring budgeting, transaction analytics, visual reports, and Gemini API-powered financial insights.</p>
-          <div class="buttons">
-            <a href="https://github.com/BrandonKochnari/finance-tracker.git" target="_blank" rel="noopener noreferrer">Repository</a>
-          </div>
-        </div>
+        </a>
 
       </div>
     </section>
 
 
-      <!-- SECTION 5: Contact -->
+      <!-- SECTION 6: Contact -->
       <section id="contact" class="contact-section">
         <h2>Contact</h2>
 
